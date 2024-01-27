@@ -10,9 +10,11 @@ function App() {
 
   return (
     <>
+      <div className='container-fluid body_section vsc-initialized'>
       <Header></Header>
       <Outlet></Outlet>
-      <Footer></Footer>
+        <Footer></Footer>
+      </div>
     </>
   )
 }

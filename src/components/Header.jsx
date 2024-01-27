@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom"
 const Header = () => {
     return (
         <header>
-            <nav className="navbar navbar-expand-lg navbar-light ">
-                <NavLink className="navbar-brand brand-name" to="/">
+            <nav className="navbar navbar-expand-lg navbar-light">
+                <h1 className="header_name" to="/">
                     Urmil Rupareliya
-                </NavLink>
+                </h1>
                 <button
                     className="navbar-toggler"
                     type="button"

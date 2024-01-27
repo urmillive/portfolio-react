@@ -1,22 +1,20 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import header_gif from "../assets/header-image.gif";
 
 const About = () => {
     return (
         <>
             <section id="Home">
                 <div className="row column1">
-                    <div className="col-lg-6 col-md-6 first-image">
-                        <img className="boyimage" src="Image/20200630_162659.gif" alt="" />
-                    </div>
                     <div className="col-lg-6 section-1">
                         <h1 className="Hello">
-                            Hello All <span className="wave">👋</span> I'm URMIL❤️{ " " }
+                            Hello <span className="wave">👋</span> I'm Urmil Rupareliya
                         </h1>
                         <p>
-                            A passionate Android Developer having an experience in App
-                            Development, Web Development and want to develop sustainable and
-                            scalable social and technical systems to create impact
+                            A passionate Full Stack Developer having an experience in Web Apps & App
+                            Development, want to develop sustainable and
+                            scalable problem solving and technical systems to create impact.
                         </p>
                         <div className="social_media_icon">
                             <Link
@@ -41,7 +39,10 @@ const About = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="Image-boy col-lg-6">
+                    <div className="col-lg-6 col-md-6 first-image">
+                        <img className="boy_image" src={ header_gif } alt="Computer guy gif" />
+                    </div>
+                    <div className="Image-boy col-lg-6 col-md-6">
                         <img className="boy" src="Image/Boy-image.png" alt="" />
                     </div>
                 </div>
