@@ -8,10 +8,10 @@ const About = () => {
             <section id="Home">
                 <div className="row column1">
                     <div className="col-lg-6 section-1">
-                        <h1 className="Hello">
-                            Hello <span className="wave">👋</span> I'm Urmil Rupareliya
-                        </h1>
-                        <p>
+                        <h2 className="hello">
+                            Hey <span className="wave">👋</span> I'm <span className='name'>Urmil 🚩</span>  नाम तो सुना ही होगा
+                        </h2>
+                        <p className='intro_header'>
                             A passionate Full Stack Developer having an experience in Web Apps & App
                             Development, want to develop sustainable and
                             scalable problem solving and technical systems to create impact.

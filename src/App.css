@@ -70,7 +70,6 @@ a {
 	text-decoration: none;
 }
 
-/* ********** */
 /* Section 1 */
 .column1 {
 	background-image: linear-gradient(#fefcfe, #ffffff);
@@ -122,6 +121,32 @@ span.wave {
 	height: 400px;
 }
 
+
+.hello{
+	font-weight: 500;
+	margin-bottom: 45px;
+}
+.hello > span.name{
+	font-weight: bold;
+	color: #8990ED;
+	background-color: #333333;
+	font-style: italic;
+	text-transform: uppercase;
+	padding: 1%;
+	background-image: linear-gradient(to right, #ff851b, #ff5722); /* Gradient background using orange and deep orange */
+  -webkit-background-clip: text; /* Clip text to the background shape */
+  color: transparent;
+	/* color: #E2C6A0; */
+}
+.intro_header{
+	font-weight: bold;
+	color: #8990ED;
+	font-size: 1.3rem;
+	text-decoration: wavy;
+}
+.intro_header::first-letter{
+	font-size: 4rem;
+}
 @media only screen and (max-width: 1183px) {
 	.first-image {
 		right: 160px;
