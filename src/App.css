@@ -187,8 +187,10 @@ p {
 	color: #868e96;
 }
 
-.btn {
-	display: inline-block;
+.social_icons {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	width: 4.37rem;
 	height: 4.37rem;
 	background: #e9e9e9;
@@ -196,23 +198,25 @@ p {
 	margin: 10px;
 	border-radius: 30%;
 	box-shadow: 0 5px 15px -5px #00000070;
-	color: #3498db;
+	color: #ff851b;
+	color: rgb(37, 138, 142);
 	overflow: hidden;
 	position: relative;
 }
 
-.btn i {
+.social_icons > i {
 	line-height: 70px;
 	font-size: 1.625rem;
 	transition: 0.2s linear;
 }
 
-.btn:hover i {
+.social_icons:hover i {
 	transform: scale(1.3);
 	color: #f1f1f1;
+	text-decoration: none;
 }
 
-.btn::before {
+.social_icons::before {
 	content: "";
 	position: absolute;
 	width: 120%;
@@ -223,19 +227,19 @@ p {
 	top: 90%;
 }
 
-.btn:hover::before {
+.social_icons:hover::before {
 	animation: aaa 0.7s 1;
 	top: -10%;
 	left: -10%;
 }
 
 @media only screen and (max-width: 470px) {
-	.btn {
+	.social_icons {
 		width: 2.5rem;
 		height: 2.5rem;
 		margin: 7px;
 	}
-	.btn i {
+	.social_icons i {
 		line-height: 40px;
 		font-size: 1em;
 	}
@@ -377,4 +381,13 @@ footer {
 	padding-top: 2%;
 	color: #868e96;
 	text-align: center;
+}
+
+
+
+.language{
+	height: 70px;
+	width: auto;
+	padding-inline: 2px;
+
 }

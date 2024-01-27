@@ -18,24 +18,24 @@ const About = () => {
                         </p>
                         <div className="social_media_icon">
                             <Link
-                                className="btn"
+                                className="social_icons"
                                 to="https://www.instagram.com/urmillive/"
                                 target="_blank"
                             >
                                 <i className="fab fa-instagram" />
                             </Link>
                             <Link
-                                className="btn"
+                                className="social_icons"
                                 to="https://www.linkedin.com/in/urmillive"
                                 target="_blank"
                             >
                                 <i className="fab fa-linkedin" aria-hidden="true" />
                             </Link>
-                            <Link className="btn" to="https://github.com/urmillive" target="_blank">
-                                <i className="fab fa-github" />
+                            <Link className="social_icons" to="https://github.com/urmillive" target="_blank">
+                                <i className="fab fa-github" aria-hidden="true" />
                             </Link>
-                            <Link className="btn" to="mailto:urmillive@gmail.com" target="_blank">
-                                <i className="fab fa-google" />
+                            <Link className="social_icons" to="mailto:urmillive@gmail.com" target="_blank">
+                                <i className="fab fa-google" aria-hidden="true" />
                             </Link>
                         </div>
                     </div>
@@ -48,12 +48,12 @@ const About = () => {
                 </div>
             </section>
             <section id="Whatido">
-                <h1>What I Do ?</h1>
+                <h1>What I Did Before ?</h1>
                 <div className="row feature-1">
                     <div className="col-lg-6 col-md-6 Feature-first-image ">
                         <img
                             className="Feature-svg-image"
-                            src="Image/Data_Analysis.svg"
+                            src="Image/Programming-amico.svg"
                             alt=""
                         />
                     </div>
@@ -72,11 +72,11 @@ const About = () => {
                         </ul>
                         <div className="Data-Analytic">
                             <p className="Features-paragraph">
-                                💥 Developing small and usable python scripts and projects which
+                                💥 Developed small and usable python scripts and projects which
                                 related to real world.
                             </p>
                             <p className="Features-paragraph">
-                                💥 Experience of working with different python Libraries like
+                                💥 Experience of worked with different python Libraries like
                                 Numpy,Pandas,Matplotlib,pyttsx3 etc and have knowledge of Data
                                 analytical algorithm and techniques.
                             </p>
@@ -84,6 +84,56 @@ const About = () => {
                     </div>
                 </div>
                 <div className="row feature-2">
+                    <div className="col-lg-6 col-md-6">
+                        <h1 className="Feature-Heading">Javascript, MERN stack</h1>
+                        <ul className="dev-icon">
+                            <li>
+                                <img className="language" src="Image/Icons/javascript.png" alt="" />
+                            </li>
+                            <li>
+                                <img className="language" src="Image/Icons/typescript.png" alt="" />
+                            </li>
+                            <li>
+                                <img className="language" src="Image/Icons/react.png" alt="" />
+                            </li>
+                            <li>
+                                <img className="language" src="Image/Icons/angular.png" alt="" />
+                            </li>
+                            <li>
+                                <img className="language" src="Image/Icons/tailwind.png" alt="" />
+                            </li>
+                            <li>
+                                <img className="language" src="Image/Icons/node.png" alt="" />
+                            </li>
+                            <li>
+                                <img className="language" src="Image/Icons/express.png" alt="" />
+                            </li>
+                            <li>
+                                <img className="language" src="Image/Icons/mongodb.png" alt="" />
+                            </li>
+                        </ul>
+                        <div className="Data-Analytic">
+                            <p className="Features-paragraph">
+                                💥 Developed small and usable python scripts and projects which
+                                related to real world.
+                            </p>
+                            <p className="Features-paragraph">
+                                💥 Experience of worked with different python Libraries like
+                                Numpy,Pandas,Matplotlib,pyttsx3 etc and have knowledge of Data
+                                analytical algorithm and techniques.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="col-lg-6 col-md-6 Feature-first-image ">
+                        <img
+                            className="Feature-svg-image"
+                            src="Image/Data_Analysis.svg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+
+                <div className="row feature-3">
                     <div className="col-lg-6 col-md-6 feature-web">
                         <h1 className="Feature-Heading">Web Development</h1>
                         <ul className="dev-icon">
@@ -136,7 +186,7 @@ const About = () => {
                         <img className="Feature-svg-image" src="Image/website.svg" alt="" />
                     </div>
                 </div>
-                <div className="row feature-3">
+                <div className="row feature-4">
                     <div className="col-lg-6 col-md-6 Feature-third-image">
                         <img className="Feature-svg-image-3" src="Image/Coding.svg" alt="" />
                     </div>
