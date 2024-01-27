@@ -199,7 +199,6 @@ p {
 	border-radius: 30%;
 	box-shadow: 0 5px 15px -5px #00000070;
 	color: #ff851b;
-	color: rgb(37, 138, 142);
 	overflow: hidden;
 	position: relative;
 }
@@ -221,7 +220,8 @@ p {
 	position: absolute;
 	width: 120%;
 	height: 120%;
-	background: #3498db;
+	/* background: #3498db; */
+	background-color: orange;
 	transform: rotate(45deg);
 	left: -110%;
 	top: 90%;
@@ -383,11 +383,22 @@ footer {
 	text-align: center;
 }
 
-
-
 .language{
 	height: 70px;
 	width: auto;
 	padding-inline: 2px;
 
+}
+.what_do::first-line,.what_do::first-line{
+	font-size: 4rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.did,.do{
+	background-color: yellow;
+	color: #333333;
+}
+
+.feature-3{
+	margin-top: -20px;
 }

@@ -23,7 +23,7 @@ const Header = () => {
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
                             <NavLink className={ ({ isActive }) => `nav-NavLink ${ isActive ? "headerachor_active" : "headerachor" }` } to="/">
-                                Home
+                                About
                             </NavLink>
                         </li>
                         <li className="nav-item">

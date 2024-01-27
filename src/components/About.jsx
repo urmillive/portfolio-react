@@ -7,6 +7,9 @@ const About = () => {
         <>
             <section id="Home">
                 <div className="row column1">
+                    <div className="col-lg-6 col-md-6 first-image">
+                        <img className="mr-5" height={ 450 } src="Image/designer.jpg" alt="" />
+                    </div>
                     <div className="col-lg-6 section-1">
                         <h2 className="hello">
                             Hey <span className="wave">👋</span> I'm <span className='name'>Urmil 🚩</span>  नाम तो सुना ही होगा
@@ -39,16 +42,18 @@ const About = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-6 first-image">
-                        <img className="boy_image" src={ header_gif } alt="Computer guy gif" />
-                    </div>
                     <div className="Image-boy col-lg-6 col-md-6">
                         <img className="boy" src="Image/Boy-image.png" alt="" />
                     </div>
                 </div>
             </section>
+
+
+
             <section id="Whatido">
-                <h1>What I Did Before ?</h1>
+                <h1 className='what_do'>What I <span className='did'>did</span> Before ?</h1>
+
+                {/* Python */ }
                 <div className="row feature-1">
                     <div className="col-lg-6 col-md-6 Feature-first-image ">
                         <img
@@ -83,7 +88,54 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* Android */ }
                 <div className="row feature-2">
+                    <div className="col-lg-6 col-md-6 Feature-first-image ">
+                        <img
+                            className="Feature-svg-image"
+                            src="Image/Programming-amico.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div className="col-lg-6 col-md-6">
+                        <h1 className="Feature-Heading">Python Programming🐍</h1>
+                        <ul className="dev-icon">
+                            <li>
+                                <i className="fab fa-python fa-5x" style={ { color: "#3776ab" } } />
+                            </li>
+                            <li>
+                                <img className="numpy" src="Image/numpy-ar21.svg" alt="" />
+                            </li>
+                            <li>
+                                <img className="pandas" src="Image/kindpng_5747046.png" alt="" />
+                            </li>
+                        </ul>
+                        <div className="Data-Analytic">
+                            <p className="Features-paragraph">
+                                💥 Developed small and usable python scripts and projects which
+                                related to real world.
+                            </p>
+                            <p className="Features-paragraph">
+                                💥 Experience of worked with different python Libraries like
+                                Numpy,Pandas,Matplotlib,pyttsx3 etc and have knowledge of Data
+                                analytical algorithm and techniques.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 className='what_do'>What I <span className='do'>do</span> Now days!</h1>
+
+                {/* MERN */ }
+                <div className="row feature-3">
+                    <div className="col-lg-6 col-md-6 Feature-first-image ">
+                        <img
+                            className="Feature-svg-image"
+                            src="Image/website.svg"
+                            alt=""
+                        />
+                    </div>
                     <div className="col-lg-6 col-md-6">
                         <h1 className="Feature-Heading">Javascript, MERN stack</h1>
                         <ul className="dev-icon">
@@ -114,26 +166,19 @@ const About = () => {
                         </ul>
                         <div className="Data-Analytic">
                             <p className="Features-paragraph">
-                                💥 Developed small and usable python scripts and projects which
-                                related to real world.
+                                💥 Developed small to large scalable and usable javascript,typescript fully fledged projects which
+                                can solve real world problems.
                             </p>
                             <p className="Features-paragraph">
-                                💥 Experience of worked with different python Libraries like
-                                Numpy,Pandas,Matplotlib,pyttsx3 etc and have knowledge of Data
-                                analytical algorithm and techniques.
+                                💥 Experience of worked with different javascript Libraries much more like
+                                Proficient in React, and Node.js,MongoDB, Express.js with expertise in building full-stack web applications and implementing RESTful APIs.
                             </p>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-6 Feature-first-image ">
-                        <img
-                            className="Feature-svg-image"
-                            src="Image/Data_Analysis.svg"
-                            alt=""
-                        />
-                    </div>
                 </div>
 
-                <div className="row feature-3">
+                {/* Web Dev */ }
+                <div className="row feature-4">
                     <div className="col-lg-6 col-md-6 feature-web">
                         <h1 className="Feature-Heading">Web Development</h1>
                         <ul className="dev-icon">
@@ -183,25 +228,49 @@ const About = () => {
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 Feature-second-image ">
-                        <img className="Feature-svg-image" src="Image/website.svg" alt="" />
+
+                        <img className="boy_image" src={ header_gif } alt="Computer guy gif" />
                     </div>
                 </div>
-                <div className="row feature-4">
+
+                {/* DSA */ }
+                <div className="row feature-5 my-5">
                     <div className="col-lg-6 col-md-6 Feature-third-image">
                         <img className="Feature-svg-image-3" src="Image/Coding.svg" alt="" />
                     </div>
                     <div className="col-lg-6 col-md-6 feature-coding">
-                        <h1 className="Feature-Heading">Data Structure and Algorithms</h1>
+                        <h1 className="Feature-Heading">Data Structures & Algorithms</h1>
                         <ul className="dev-icon">
-                            <li />
                             <li>
-                                <i className="fas fa-laptop-code fa-4x" />
+                                <img className="language" src="Image/Icons/codechef.png" alt="" />
                             </li>
+                        </ul>
+                        <div className="Data-Analytic">
+                            <p className="Features-paragraph">
+                                💥 I have knowledge of Data Structure like Stack,Queue,Hash Tables,
+                                Trees, Tries, Graphs, and various algorithms for solving various
+                                problems efficiently.
+                            </p>
+                            <p className="Features-paragraph">
+                                💥 As I know Data Structure and Algorithms are the heart of
+                                programming, So I loves to solve programming question in different
+                                competitive website like hackerrank,codechef,hackerearth and many
+                                more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Open Source */ }
+                <div className="row feature-6 my-5">
+                    <div className="col-lg-6 col-md-6 Feature-third-image">
+                        <img className="Feature-svg-image-3" src="Image/Coding.svg" alt="" />
+                    </div>
+                    <div className="col-lg-6 col-md-6 feature-coding">
+                        <h1 className="Feature-Heading">Open Source Contributions</h1>
+                        <ul className="dev-icon">
                             <li>
-                                <i
-                                    className="fas fa-file-code fa-4x"
-                                    style={ { color: "#a8afcb" } }
-                                />
+                                <img className="language" src="Image/Icons/open-source.png" alt="" />
                             </li>
                         </ul>
                         <div className="Data-Analytic">
