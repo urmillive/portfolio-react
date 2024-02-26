@@ -280,10 +280,9 @@ const About = () => {
                                 problems efficiently.
                             </p>
                             <p className="Features-paragraph">
-                                💥 As I know Data Structure and Algorithms are the heart of
-                                programming, So I loves to solve programming question in different
-                                competitive website like hackerrank,codechef,hackerearth and many
-                                more.
+                                💥 Eclipse, vlc, education, codota, Eddiehub community, Python geeks, codeforcauseorg
+
+                                Participated Project at Arctic Code Vault Contributor
                             </p>
                         </div>
                     </div>
