@@ -141,7 +141,7 @@ span.wave {
 .intro_header{
 	font-weight: bold;
 	color: #8990ED;
-	font-size: 1.3rem;
+	font-size: 2rem;
 	text-decoration: wavy;
 }
 .intro_header::first-letter{

@@ -7,12 +7,9 @@ const About = () => {
         <>
             <section id="Home">
                 <div className="row column1">
-                    <div className="col-lg-6 col-md-6 first-image">
-                        <img className="mr-5" height={ 450 } src="Image/designer.jpg" alt="" />
-                    </div>
                     <div className="col-lg-6 section-1">
                         <h2 className="hello">
-                            Hey <span className="wave">👋</span> I'm <span className='name'>Urmil 🚩</span>  नाम तो सुना ही होगा
+                            <span className='name'>Software Engineer</span>
                         </h2>
                         <p className='intro_header'>
                             A passionate Full Stack Developer having an experience in Web Apps & App
@@ -42,8 +39,8 @@ const About = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="Image-boy col-lg-6 col-md-6">
-                        <img className="boy" src="Image/Boy-image.png" alt="" />
+                    <div className="col-lg-6 col-md-6 first-image">
+                        <img className="mr-5" height={ 450 } src="Image/designer.jpg" alt="" />
                     </div>
                 </div>
             </section>
@@ -91,15 +88,8 @@ const About = () => {
 
                 {/* Android */ }
                 <div className="row feature-2">
-                    <div className="col-lg-6 col-md-6 Feature-first-image ">
-                        <img
-                            className="Feature-svg-image"
-                            src="Image/Programming-amico.svg"
-                            alt=""
-                        />
-                    </div>
                     <div className="col-lg-6 col-md-6">
-                        <h1 className="Feature-Heading">Python Programming🐍</h1>
+                        <h1 className="Feature-Heading">Android Programming🐍</h1>
                         <ul className="dev-icon">
                             <li>
                                 <i className="fab fa-python fa-5x" style={ { color: "#3776ab" } } />
@@ -123,6 +113,13 @@ const About = () => {
                             </p>
                         </div>
                     </div>
+                    <div className="col-lg-6 col-md-6 Feature-first-image ">
+                        <img
+                            className="Feature-svg-image"
+                            src="Image/3.jpg"
+                            alt=""
+                        />
+                    </div>
                 </div>
 
                 <h1 className='what_do'>What I <span className='do'>do</span> Now days!</h1>
@@ -132,7 +129,7 @@ const About = () => {
                     <div className="col-lg-6 col-md-6 Feature-first-image ">
                         <img
                             className="Feature-svg-image"
-                            src="Image/website.svg"
+                            src="Image/4.jpg"
                             alt=""
                         />
                     </div>
@@ -281,7 +278,6 @@ const About = () => {
                             </p>
                             <p className="Features-paragraph">
                                 💥 Eclipse, vlc, education, codota, Eddiehub community, Python geeks, codeforcauseorg
-
                                 Participated Project at Arctic Code Vault Contributor
                             </p>
                         </div>
