@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import header_gif from "../../assets/header-image.gif";
+import './about.css';
 
 const About = () => {
     return (
@@ -34,7 +35,7 @@ const About = () => {
                     </div>
                     <div className="col-lg-6 section-1">
                         <h2 className="hello">
-                            <span className='name'>Software Engineer</span>
+                            <span className='name software_engineer'>Software Engineer</span>
                         </h2>
                         <p className='intro_header'>
                             A passionate Full Stack Developer having an experience in Web Apps & App
@@ -56,32 +57,27 @@ const About = () => {
                         <h1 className="Feature-Heading">Android Programming🐍</h1>
                         <ul className="dev-icon">
                             <li>
-                                <i className="fab fa-python fa-5x" style={ { color: "#3776ab" } } />
-                            </li>
-                            <li>
-                                <img className="numpy" src="Image/numpy-ar21.svg" alt="" />
-                            </li>
-                            <li>
-                                <img className="pandas" src="Image/kindpng_5747046.png" alt="" />
+                                <img className="android" src="Image/Icons/android-logo.svg" alt="" />
                             </li>
                         </ul>
-                        <div className="Data-Analytic">
+                        <div className="">
                             <p className="Features-paragraph">
-                                💥 Developed small and usable python scripts and projects which
-                                related to real world.
+                                💥 Developed small and usable Java Android Apps.
                             </p>
                             <p className="Features-paragraph">
-                                💥 Experience of worked with different python Libraries like
-                                Numpy,Pandas,Matplotlib,pyttsx3 etc and have knowledge of Data
-                                analytical algorithm and techniques.
+                                💥 Experience of XML and flutter UI stuff.
+                                Made some cool projects on Android Java.
+                            </p>
+                            <p className="Features-paragraph">
+                                💥 Have knowledge of debugging in android and other API integration stuff.
                             </p>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 Feature-first-image ">
                         <img
-                            className="Feature-svg-image"
+                            className="android_banner"
                             src="Image/android-developer.svg"
-                            alt=""
+                            alt="android banner"
                             height={ 200 }
                         />
                     </div>
