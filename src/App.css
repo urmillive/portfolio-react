@@ -128,19 +128,19 @@ span.wave {
 }
 .hello > span.name{
 	font-weight: bold;
-	color: #8990ED;
 	background-color: #333333;
 	font-style: italic;
 	text-transform: uppercase;
 	padding: 1%;
-	background-image: linear-gradient(to right, #ff851b, #ff5722); /* Gradient background using orange and deep orange */
+	background-image: linear-gradient(to right, #ff851b, #CB6EF3); /* Gradient background using orange and deep orange */
   -webkit-background-clip: text; /* Clip text to the background shape */
   color: transparent;
 	/* color: #E2C6A0; */
 }
 .intro_header{
 	font-weight: bold;
-	color: #8990ED;
+	/* color: #8990ED; */
+	color: #0EB4DE;
 	font-size: 2rem;
 	text-decoration: wavy;
 }
@@ -186,7 +186,11 @@ p {
 	line-height: 2;
 	color: #868e96;
 }
-
+.social_media_icon{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
 .social_icons {
 	display: inline-flex;
 	align-items: center;
@@ -198,9 +202,13 @@ p {
 	margin: 10px;
 	border-radius: 30%;
 	box-shadow: 0 5px 15px -5px #00000070;
-	color: #ff851b;
+	/* color: #ff851b; */
+	color: #CB6EF3;
 	overflow: hidden;
 	position: relative;
+}
+a.social_icons:hover{
+	text-decoration: none;
 }
 
 .social_icons > i {
@@ -212,7 +220,6 @@ p {
 .social_icons:hover i {
 	transform: scale(1.3);
 	color: #f1f1f1;
-	text-decoration: none;
 }
 
 .social_icons::before {
@@ -221,7 +228,7 @@ p {
 	width: 120%;
 	height: 120%;
 	/* background: #3498db; */
-	background-color: orange;
+	background-color: #CB6EF3;
 	transform: rotate(45deg);
 	left: -110%;
 	top: 90%;

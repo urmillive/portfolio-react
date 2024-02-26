@@ -6,8 +6,6 @@ import Main from "./components/About"
 import Footer from "./components/Footer"
 
 function App() {
-  const [ count, setCount ] = useState(0)
-
   return (
     <>
       <div className='container-fluid body_section vsc-initialized'>

@@ -7,15 +7,8 @@ const About = () => {
         <>
             <section id="Home">
                 <div className="row column1">
-                    <div className="col-lg-6 section-1">
-                        <h2 className="hello">
-                            <span className='name'>Software Engineer</span>
-                        </h2>
-                        <p className='intro_header'>
-                            A passionate Full Stack Developer having an experience in Web Apps & App
-                            Development, want to develop sustainable and
-                            scalable problem solving and technical systems to create impact.
-                        </p>
+                    <div className="col-lg-6 col-md-6 first-image">
+                        <img className="mr-5" height={ 450 } src="Image/designer.jpg" alt="" />
                         <div className="social_media_icon">
                             <Link
                                 className="social_icons"
@@ -39,8 +32,15 @@ const About = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-6 first-image">
-                        <img className="mr-5" height={ 450 } src="Image/designer.jpg" alt="" />
+                    <div className="col-lg-6 section-1">
+                        <h2 className="hello">
+                            <span className='name'>Software Engineer</span>
+                        </h2>
+                        <p className='intro_header'>
+                            A passionate Full Stack Developer having an experience in Web Apps & App
+                            Development, want to develop sustainable and
+                            scalable problem solving and technical systems to create impact.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -260,9 +260,6 @@ const About = () => {
 
                 {/* Open Source */ }
                 <div className="row feature-6 my-5">
-                    <div className="col-lg-6 col-md-6 Feature-third-image">
-                        <img className="Feature-svg-image-3" src="Image/Coding.svg" alt="" />
-                    </div>
                     <div className="col-lg-6 col-md-6 feature-coding">
                         <h1 className="Feature-Heading">Open Source Contributions</h1>
                         <ul className="dev-icon">
@@ -281,6 +278,9 @@ const About = () => {
                                 Participated Project at Arctic Code Vault Contributor
                             </p>
                         </div>
+                    </div>
+                    <div className="col-lg-6 col-md-6 Feature-third-image">
+                        <img className="Feature-svg-image-3 w-100" src="Image/6.jpg" alt="" />
                     </div>
                 </div>
             </section>
