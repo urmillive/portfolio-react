@@ -127,11 +127,12 @@ span.wave {
 	margin-bottom: 45px;
 }
 .hello > span.name{
+	display: block;
 	font-weight: bold;
 	background-color: #333333;
 	font-style: italic;
 	text-transform: uppercase;
-	padding: 1%;
+	padding: 2%;
 	background-image: linear-gradient(to right, #ff851b, #CB6EF3); /* Gradient background using orange and deep orange */
   -webkit-background-clip: text; /* Clip text to the background shape */
   color: transparent;

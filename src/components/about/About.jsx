@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import header_gif from "../assets/header-image.gif";
+import header_gif from "../../assets/header-image.gif";
 
 const About = () => {
     return (
@@ -50,42 +50,6 @@ const About = () => {
             <section id="Whatido">
                 <h1 className='what_do'>What I <span className='did'>did</span> Before ?</h1>
 
-                {/* Python */ }
-                <div className="row feature-1">
-                    <div className="col-lg-6 col-md-6 Feature-first-image ">
-                        <img
-                            className="Feature-svg-image"
-                            src="Image/Programming-amico.svg"
-                            alt=""
-                        />
-                    </div>
-                    <div className="col-lg-6 col-md-6">
-                        <h1 className="Feature-Heading">Python Programming🐍</h1>
-                        <ul className="dev-icon">
-                            <li>
-                                <i className="fab fa-python fa-5x" style={ { color: "#3776ab" } } />
-                            </li>
-                            <li>
-                                <img className="numpy" src="Image/numpy-ar21.svg" alt="" />
-                            </li>
-                            <li>
-                                <img className="pandas" src="Image/kindpng_5747046.png" alt="" />
-                            </li>
-                        </ul>
-                        <div className="Data-Analytic">
-                            <p className="Features-paragraph">
-                                💥 Developed small and usable python scripts and projects which
-                                related to real world.
-                            </p>
-                            <p className="Features-paragraph">
-                                💥 Experience of worked with different python Libraries like
-                                Numpy,Pandas,Matplotlib,pyttsx3 etc and have knowledge of Data
-                                analytical algorithm and techniques.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
                 {/* Android */ }
                 <div className="row feature-2">
                     <div className="col-lg-6 col-md-6">
@@ -116,11 +80,50 @@ const About = () => {
                     <div className="col-lg-6 col-md-6 Feature-first-image ">
                         <img
                             className="Feature-svg-image"
-                            src="Image/3.jpg"
+                            src="Image/android-developer.svg"
                             alt=""
+                            height={ 200 }
                         />
                     </div>
                 </div>
+
+                {/* Python */ }
+                <div className="row feature-1">
+                    <div className="col-lg-6 col-md-6 Feature-first-image ">
+                        <img
+                            className="Feature-svg-image"
+                            src="Image/python_coding.png"
+                            alt=""
+                        />
+                    </div>
+                    <div className="col-lg-6 col-md-6">
+                        <h1 className="Feature-Heading">Python Programming🐍</h1>
+                        <ul className="dev-icon">
+                            <li>
+                                <i className="fab fa-python fa-5x" style={ { color: "#3776ab" } } />
+                            </li>
+                            <li>
+                                <img className="numpy" src="Image/numpy-ar21.svg" alt="" />
+                            </li>
+                            <li>
+                                <img className="pandas" src="Image/kindpng_5747046.png" alt="" />
+                            </li>
+                        </ul>
+                        <div className="Data-Analytic">
+                            <p className="Features-paragraph">
+                                💥 Developed small and usable python scripts and projects which
+                                related to real world.
+                            </p>
+                            <p className="Features-paragraph">
+                                💥 Experience of worked with different python Libraries like
+                                Numpy,Pandas,Matplotlib,pyttsx3 etc and have knowledge of Data
+                                analytical algorithm and techniques.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
 
                 <h1 className='what_do'>What I <span className='do'>do</span> Now days!</h1>
 

@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
-import About from './components/About.jsx'
-import Education from "./components/Education.jsx"
-import Skills from "./components/Skills.jsx"
-import Contact from "./components/Contact"
-import Projects from "./components/Projects"
+import About from './components/about/About.jsx'
+import Education from "./components/education/Education.jsx"
+import Skills from "./components/skills/Skills.jsx"
+import Contact from "./components/contact/Contact.jsx"
+import Projects from "./components/projects/Projects.jsx"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.js'
 
