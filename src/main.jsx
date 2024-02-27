@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         element: <About />
       },
       {
-        path: 'education',
+        path: 'timeline',
         element: <Education />
       },
       {

@@ -31,6 +31,10 @@ const About = () => {
                             <Link className="social_icons" to="mailto:urmillive@gmail.com" target="_blank">
                                 <i className="fab fa-google" aria-hidden="true" />
                             </Link>
+                            <Link className="social_icons" to="https://www.youtube.com/@urmillive" target="_blank">
+                                <i className="fab fa-youtube" aria-hidden="true" />
+                            </Link>
+
                         </div>
                     </div>
                     <div className="col-lg-6 section-1">
