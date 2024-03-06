@@ -7,8 +7,8 @@ const Education = () => {
                 <div className="timeline" id="timeline">
                     <div className="box left">
                         <div className="content">
-                            <h2>2015</h2>
-                            <p>Initiated my coding journey during 10<sup>th</sup> standard.</p>
+                            <h2>2015- Initiated my Coding Journey </h2>
+                            <p>started my coding with basic HTML and CSS during 10<sup>th</sup> standard.</p>
                         </div>
                     </div>
                     <div className="box right">
@@ -31,7 +31,33 @@ const Education = () => {
                     </div>
                     <div className="box left">
                         <div className="content">
-                            <h2>2021 - Coding Journey Begins</h2>
+                            <h2>2020 - Participated my first Hactoberfest</h2>
+                            <p>Thrilled to announce my first Hacktoberfest adventure, contributing to open source and embracing the thrill of collaboration. 🚀
+                            </p>
+                        </div>
+                    </div>
+                    <div className="box right">
+                        <div className="content">
+                            <h2>2021 - Joined GDSC Club</h2>
+                            <p>Joined the Google developer students club at Parul University.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="box left">
+                        <div className="content">
+                            <h2>2021 - Completed Google cloud program</h2>
+                            <p>completed the cloud program and got certified by google cloud.</p>
+                        </div>
+                    </div>
+                    <div className="box right">
+                        <div className="content">
+                            <h2>2022 - Attended Hactrack 2.0</h2>
+                            <p>Learnt Cyber security track from Best Ethical hacker Sanny Vaghela sir.</p>
+                        </div>
+                    </div>
+                    <div className="box left">
+                        <div className="content">
+                            <h2>2021 - Started Hunting of Hackthons & Competitions</h2>
                             <p>Active participation in hackathons, crafting 12+ projects across diverse IT domains. Commenced MCA at Parul University.
                             </p>
                         </div>
@@ -44,13 +70,13 @@ const Education = () => {
                     </div>
                     <div className="box left">
                         <div className="content">
-                            <h2>2022 - Get Internship during College</h2>
-                            <p>I got change to be Web Development Intern at fox valley</p>
+                            <h2>2022 - Got First Internship</h2>
+                            <p>I got change to be Web Development Intern at fox valley.</p>
                         </div>
                     </div>
                     <div className="box right">
                         <div className="content">
-                            <h2>2022 - Get Internship offer from Warelogg</h2>
+                            <h2>2022 - Got Internship offer from Warelogg</h2>
                             <p>Got Chance to work in logistics and warehousing startup as Frontend Web Developer</p>
                         </div>
                     </div>
