@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from "react-router-dom"
 import header_gif from "../../assets/header-image.gif";
 import './about.css';
@@ -9,7 +8,7 @@ const About = () => {
             <section id="Home">
                 <div className="row column1">
                     <div className="col-lg-6 col-md-6 first-image">
-                        <img className="mr-5" height={ 450 } src="Image/designer.jpg" alt="" />
+                        <img className="mr-5 sde-image" height={ 450 } src="Image/designer.jpg" alt="" />
                         <div className="social_media_icon">
                             <Link
                                 className="social_icons"
@@ -28,6 +27,10 @@ const About = () => {
                             <Link className="social_icons" to="https://github.com/urmillive" target="_blank">
                                 <i className="fab fa-github" aria-hidden="true" />
                             </Link>
+                            <Link className="social_icons" to="https://stackoverflow.com/users/12697583/urmil-rupareliya" target="_blank">
+                                <i className="fab fa-stack-overflow"></i>
+                            </Link>
+
                             <Link className="social_icons" to="mailto:urmillive@gmail.com" target="_blank">
                                 <i className="fab fa-google" aria-hidden="true" />
                             </Link>
