@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple:regular);
+@import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700);
+
+.hello{
+	font-weight: 500;
+	margin-bottom: 45px;
+}
+.hello > span.software-engineer{
+	display: block;
+	font-weight: bold;
+	background-color: #333333;
+	font-style: italic;
+	text-transform: uppercase;
+	padding: 2%;
+	background-image: linear-gradient(to right, #ff851b, #CB6EF3); /* Gradient background using orange and deep orange */
+  -webkit-background-clip: text; /* Clip text to the background shape */
+  color: transparent;
+	/* color: #E2C6A0; */
+}
+
+.software-engineer {
+	font-weight: 900;
+	font-family: "Montserrat";
+}
+
+.software-engineer-description{
+	/* color: #CB6EF3; */
+	/* color:#333333; */
+	color:#351458;
+	font-family: Caveat;
+}
+
+.android_banner{
+    height: 500px;
+}
+
+.sde-image{
+	display: flex;
+  	justify-content: center;
+  	/* margin-left: 15%; */
+	border-radius: 5%;
+	background:transparent;
+}
+
+
+.social_media_icon{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	flex-flow: wrap;
+}
+.social_icons {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 4.37rem;
+	height: 4.37rem;
+	background: #e9e9e9;
+	padding: 0px 0px;
+	margin: 10px;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: #CB6EF3;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+}
+a.social_icons:hover{
+	text-decoration: none;
+}
+
+.social_icons > i {
+	line-height: 70px;
+	font-size: 1.625rem;
+	transition: 0.2s linear;
+}
+
+.social_icons:hover i {
+	transform: scale(1.3);
+	color: #f1f1f1;
+}
+
+.social_icons::before {
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background-color: #CB6EF3;
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+}
+
+.social_icons:hover::before {
+	animation: aaa 0.7s 1;
+	top: -10%;
+	left: -10%;
+}
+
+.dev-icon {
+	list-style: none;
+	display: inline;
+	padding: 0%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
