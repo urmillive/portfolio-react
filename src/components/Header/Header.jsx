@@ -1,8 +1,18 @@
-import { NavLink } from "react-router-dom"
+
+import { NavLink, useLocation } from "react-router-dom"
 import { Col } from 'react-bootstrap'
 import "./Header.css"
+import { useEffect } from "react";
 
 const Header = () => {
+	const location = useLocation();
+	useEffect(() => {
+		const navbarToggler = document.querySelector('.navbar-toggler');
+		const navbarCollapse = document.querySelector('.navbar-collapse');
+		if (navbarToggler && navbarCollapse) {
+			navbarCollapse.classList.remove('show');
+		}
+	}, [ location ]);
 	return (
 		<header>
 			<nav className='navbar navbar-expand-lg navbar-light'>
