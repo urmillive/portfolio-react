@@ -44,7 +44,7 @@ const Header = () => {
 								}
 								to='/'
 							>
-								Abouts
+								About
 							</NavLink>
 						</li>
 						<li className='nav-item'>
