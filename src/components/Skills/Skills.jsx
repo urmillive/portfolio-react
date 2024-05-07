@@ -18,6 +18,9 @@ const skillsList = [
     'Express.js',
     'Node.js',
     'React.js',
+    'Angular',
+    'Typescript',
+    'React Bootstrap',
     'Redux',
     'Next.js',
     'GraphQL',
@@ -51,6 +54,7 @@ const skillsList = [
     'Electron.js',
     'Progressive Enhancement',
     'Browser Developer Tools',
+    'Android Webview Debugging',
 ];
 
 const Skills = () => {
