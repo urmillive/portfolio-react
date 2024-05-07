@@ -9,8 +9,8 @@
     z-index: 1;
     max-width: 100vw;
     max-height: 300px;
-    overflow: hidden; /* Hide overflow for the banner */
-    transition: opacity 0.5s ease; /* Add transition for smooth disappearing effect */
+    overflow: hidden;
+    transition: opacity 0.5s ease;
 }
 
 .project-banner img {

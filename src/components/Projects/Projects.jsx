@@ -3,26 +3,24 @@ import ProjectCard from './Projectcard'; // Import the ProjectCard component
 import './Project.css'; // Import your CSS file
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from 'react';
 
 const Project = () => {
-    const [ repos, setRepos ] = useState([]);
-    useEffect(() => {
-        const fetchRepos = async () => {
-            try {
-                const response = await fetch('https://api.github.com/users/urmillive/repos');
-                if (!response.ok) {
-                    throw new Error('Failed to fetch data');
-                }
-                const data = await response.json();
-                setRepos(data);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
+    // useEffect(() => {
+    //     const fetchRepos = async () => {
+    //         try {
+    //             const response = await fetch('https://api.github.com/users/urmillive/repos');
+    //             if (!response.ok) {
+    //                 throw new Error('Failed to fetch data');
+    //             }
+    //             const data = await response.json();
+    //             setRepos(data);
+    //         } catch (error) {
+    //             console.error('Error fetching data:', error);
+    //         }
+    //     };
 
-        fetchRepos();
-    }, []);
+    //     fetchRepos();
+    // }, []);
     const projects = [
         {
             title: 'Project 1',
