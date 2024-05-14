@@ -1,58 +1,25 @@
-
-import ProjectCard from './Projectcard'; // Import the ProjectCard component
-import './Project.css'; // Import your CSS file
+import ProjectCard from './Projectcard';
+import './Project.css';
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { setProjectDetail } from '../../features/projectDetailSlice';
+import { useDispatch } from 'react-redux';
 
 const Project = () => {
-    // useEffect(() => {
-    //     const fetchRepos = async () => {
-    //         try {
-    //             const response = await fetch('https://api.github.com/users/urmillive/repos');
-    //             if (!response.ok) {
-    //                 throw new Error('Failed to fetch data');
-    //             }
-    //             const data = await response.json();
-    //             setRepos(data);
-    //         } catch (error) {
-    //             console.error('Error fetching data:', error);
-    //         }
-    //     };
 
-    //     fetchRepos();
-    // }, []);
     const projects = [
         {
-            title: 'Project 1',
+            title: 'TicTacToe Game',
             logoUrl: 'https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-1024.png',
-            bannerUrl: 'https://www.freecodecamp.org/news/content/images/size/w2000/2024/03/React-JS-Hooks.png',
-            description: 'Some quick example text to build on the card title and make up the Description of Project 1',
-        },
-        {
-            title: 'Project 2',
-            logoUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968322.png',
-            bannerUrl: 'https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/8560a1a8184de8e84b512bb2a47b7e77?_a=AQAEufR',
-            description: 'Description of Project 2',
-        },
-        {
-            title: 'Project 3',
-            logoUrl: 'https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-1024.png',
-            bannerUrl: 'https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/6a90d602f5b9a06428b561f8995c57ed?_a=AQAEufR',
-            description: 'Description of Project 2',
-        },
-        {
-            title: 'Project 3',
-            logoUrl: 'https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-1024.png',
-            bannerUrl: 'https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/6a90d602f5b9a06428b561f8995c57ed?_a=AQAEufR',
-            description: 'Description of Project 2',
-        },
-        {
-            title: 'Project 3',
-            logoUrl: 'https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-1024.png',
-            bannerUrl: 'https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/6a90d602f5b9a06428b561f8995c57ed?_a=AQAEufR',
-            description: 'Description of Project 2',
+            bannerUrl: 'https://images.pexels.com/photos/3400795/pexels-photo-3400795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+            description: 'Beginner Level Tic Tac Toe game',
         },
     ];
+
+    const dispatch = useDispatch();
+    const handleCardClick = (project) => {
+        dispatch(setProjectDetail(project));
+    };
 
     return (
         <Container>
@@ -62,10 +29,7 @@ const Project = () => {
                     <Col lg={ 3 } md={ 3 } sm={ 12 } key={ index }>
                         <Link to={ `/projects/${ index + 1 }` } className='text-decoration-none'>
                             <ProjectCard
-                                title={ project.title }
-                                logoUrl={ project.logoUrl }
-                                bannerUrl={ project.bannerUrl }
-                                description={ project.description }
+                                onClick={ () => { handleCardClick(project) } }
                             />
                         </Link>
                     </Col>
