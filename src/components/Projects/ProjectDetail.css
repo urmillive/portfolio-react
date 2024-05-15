@@ -65,3 +65,20 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
+/* for small devices like mobile phones */
+@media (max-width: 768px) {
+    .project-detail-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .project-details {
+        flex-direction: column;
+    }
+
+    .project-buttons {
+        width: 100%;
+        flex-direction: row;
+    }
+}
