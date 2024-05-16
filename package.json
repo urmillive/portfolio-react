@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.2.4",
+    "@reduxjs/toolkit": "^2.2.5",
     "bootstrap": "^5.3.3",
     "google-fonts": "^1.0.0",
     "prettier": "^3.2.4",

@@ -1,13 +1,12 @@
 import { useParams } from 'react-router-dom';
-import PropTypes from "prop-types";
 import './ProjectDetail.css';
 import { useSelector } from 'react-redux';
 
 
 const ProjectDetail = () => {
     const { id } = useParams();
-    const projectDetail = useSelector(state => state.projectDetail.projectDetail);
-    console.log(projectDetail)
+    const projects = useSelector(state => state.projectDetail.projectDetail);
+    const projectDetail = projects[ id - 1 ];
     const project = {
         id: id,
         title: projectDetail.title,
