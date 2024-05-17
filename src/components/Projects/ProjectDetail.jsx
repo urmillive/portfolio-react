@@ -13,8 +13,8 @@ const ProjectDetail = () => {
         description: projectDetail.description,
         logoUrl: projectDetail.logoUrl,
         bannerUrl: projectDetail.bannerUrl,
-        githubLink: 'https://github.com/urmillive/TictactoeGameReact',
-        visitLink: 'https://urmillive.github.io/TictactoeGameReact/'   
+        githubLink: projectDetail.githubLink,
+        visitLink: projectDetail.visitLink   
     };
 
     return (
