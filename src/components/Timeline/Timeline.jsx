@@ -89,7 +89,7 @@ const Timeline = () => {
                     </div>
                     <div className="box right">
                         <div className="content">
-                            <h2>Present - 2024</h2>
+                            <h2>Present - 2023</h2>
                             <p>Continuing the journey at Asite Solutions, contributing to innovative projects and solutions.</p>
                         </div>
                     </div>
