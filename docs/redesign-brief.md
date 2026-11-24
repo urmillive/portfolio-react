@@ -74,3 +74,29 @@ Only verifiable ones:
 - [ ] Lighthouse: performance 90 or above, accessibility 95 or above.
 - [ ] Live on https://urmil.live over HTTPS, with old URLs falling back to the home page.
 - [ ] Rollback path written down.
+
+## Deployed (7 Nov 2026)
+
+The brief's Caddy plan was wrong: urmil.live is served by host nginx (`/etc/nginx/sites-available/urmil-live`), not Caddy. No WayVibe infra was touched.
+
+- nginx root is `/var/www/urmil.live/current`, a symlink to `releases/<name>`. Unknown paths fall back to `index.html`.
+- **Rolled back the same evening at the owner's request ("old is fine").** Live again: `releases/7c24572`, the old site from the separate `urmillive/urmil-folio` repo (blog, AI-twin chat).
+- The redesign stays on the server, unused, as `releases/redesign-20261107-2209`. To switch to it, point `current` at that folder.
+- Full backup taken before the switch: `/var/backups/urmil.live-20261107-162209.tar.gz` on the server. It holds all releases plus the nginx site and stream configs.
+
+### Deploy a new build
+
+```sh
+npm run build
+R=redesign-$(date +%Y%m%d-%H%M)
+tar -C dist -czf - . | ssh -i ~/.ssh/way_deploy root@195.35.23.100 \
+  "D=/var/www/urmil.live/releases/$R; mkdir -p \$D && tar -C \$D -xzf - --no-same-owner && chmod -R a+rX \$D && ln -sfn \$D /var/www/urmil.live/current.new && mv -T /var/www/urmil.live/current.new /var/www/urmil.live/current"
+```
+
+### Roll back (instant, no reload needed)
+
+```sh
+ssh -i ~/.ssh/way_deploy root@195.35.23.100 'ln -sfn /var/www/urmil.live/releases/7c24572 /var/www/urmil.live/current.new && mv -T /var/www/urmil.live/current.new /var/www/urmil.live/current'
+```
+
+If the releases folder is ever lost, restore from the backup: `tar -xzf /var/backups/urmil.live-20261107-162209.tar.gz -C /`.

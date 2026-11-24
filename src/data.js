@@ -1,6 +1,5 @@
 // All portfolio content lives here. Sources: the previous site (Timeline.jsx,
 // About.jsx, projectsData.js), Education.md, and wayvibe.app's own meta text.
-// Anything marked TODO is missing from the repo; the owner should fill it in.
 
 export const profile = {
   name: "Urmil Rupareliya",
@@ -12,16 +11,16 @@ export const profile = {
   photo: "/me.jpeg",
   status: "Building WayVibe",
   email: "urmillive@gmail.com",
-  // TODO(owner): add a resume/CV PDF to public/ and set its path here.
-  resume: null,
-  // TODO(owner): current city, if you want it shown next to the status pill.
-  location: null,
+  phone: "+91 63555 58644",
+  resume: "https://drive.google.com/file/d/1foRHrRudpBtRJDP00nX4yEygwncEnMfg/view?usp=sharing",
+  location: "Ahmedabad, India",
 };
 
 export const socials = [
   { label: "GitHub", href: "https://github.com/urmillive" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/urmillive" },
   { label: "Instagram", href: "https://www.instagram.com/urmillive/" },
+  { label: "Instagram · urmil.ai", href: "https://www.instagram.com/urmil.ai/" },
   { label: "Stack Overflow", href: "https://stackoverflow.com/users/12697583/urmil-rupareliya" },
   { label: "YouTube", href: "https://www.youtube.com/@urmillive" },
 ];
@@ -102,10 +101,9 @@ export const story = [
   { year: "2021", title: "GDSC and Google Cloud", text: "Joined the Google Developer Student Club at Parul University and completed a Google Cloud program." },
   { year: "2021", title: "Hackathons and MCA", text: "Built 12+ projects across hackathons and competitions. Started MCA at Parul University." },
   { year: "2022", title: "Won the Gateway hackathon", text: "Won the first hackathon organised by Gateway Group of Companies. Attended Hactrack 2.0 (cyber security track)." },
-  { year: "2022", title: "Internships", text: "Web development intern at Fox Valley, then frontend developer at Warelogg, a logistics and warehousing startup." },
-  { year: "2023", title: "Joined Asite Solutions", text: "Worked on projects at Asite Solutions." },
-  { year: "2025", title: "Joined Upsquare Technologies", text: "Building products at Upsquare Technologies." },
-  // TODO(owner): role titles and end dates for Asite and Upsquare are not in the repo.
+  { year: "2022", title: "First full-time roles", text: "Full-stack developer at Fox Valley Solutions (Apr to Sep), then web developer at Warelogg Solutions, building software for shipping and marine services." },
+  { year: "2023", title: "Software engineer at Asite", text: "Feb 2023 to Aug 2025. Angular and React frontends on full-stack projects with Node.js, NestJS and MongoDB." },
+  { year: "2025", title: "Software engineer at Upsquare", text: "Aug 2025 to now. Full-stack products with NestJS, Node.js and Angular, and mentoring a team of 3 developers." },
 ];
 
 export const skills = [
@@ -116,11 +114,10 @@ export const skills = [
 ];
 
 export const education = [
-  { place: "Parul University", course: "MCA", years: "Started 2021", note: null },
-  { place: "Saurashtra University, Rajkot", course: "BCA, Computer Science", years: "Started 2018", note: "CGPA 8.9, college topper" },
+  { place: "Parul University", course: "MCA, Cyber Security & Forensics", years: "2021 to 2023", note: null },
+  { place: "Saurashtra University, Rajkot", course: "BCA, Computer Science", years: "2018 to 2021", note: "CGPA 8.9, college topper" },
   { place: "S.S.G.S School, Rajkot", course: "Senior secondary, science", years: "2017", note: null },
 ];
-// TODO(owner): BCA/MCA start years come from the timeline; add completion years.
 
 export const openSource = [
   "Hacktoberfest contributor",

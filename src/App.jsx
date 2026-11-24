@@ -89,6 +89,7 @@ function Hero() {
         <div className="hero-cta">
           <a className="btn" href="#work">See the work</a>
           <a className="btn ghost" href={`mailto:${profile.email}`}>Say hello</a>
+          <External className="btn ghost" href={profile.resume}>Resume ↗</External>
         </div>
       </div>
       <Board />
@@ -234,7 +235,9 @@ function Footer() {
       <div>
         <p className="foot-lede">That&apos;s the story so far. Your move.</p>
         <a className="big" href={`mailto:${profile.email}`}>Say hello <span aria-hidden="true">→</span></a>
-        <p className="mail">{profile.email}</p>
+        <p className="mail">
+          {profile.email} · <a href={`tel:${profile.phone.replace(/\s/g, "")}`}>{profile.phone}</a> · {profile.location}
+        </p>
       </div>
       <ul className="socials">
         {socials.map((s) => <li key={s.href}><External href={s.href}>{s.label}</External></li>)}
